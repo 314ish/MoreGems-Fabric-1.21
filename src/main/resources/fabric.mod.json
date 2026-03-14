@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "moregems",
+	"version": "${version}",
+	"name": "More Gems",
+	"description": "This mod adds many new types of crystals to the game.",
+	"authors": [
+		"BlazingBlaze8"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/moregems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.blazingblaze8.moregems.MoreGems"
+		],
+		"fabric-datagen": [
+			"com.blazingblaze8.moregems.MoreGemsDataGenerator"
+		],
+		"client": [
+			"com.blazingblaze8.moregems.MoreGemsClient"
+		]
+	},
+	"mixins": [
+		"moregems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
