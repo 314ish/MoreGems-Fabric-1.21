@@ -1,5 +1,6 @@
 package com.blazingblaze8.moregems;
 
+import com.blazingblaze8.moregems.block.ModBlocks;
 import com.blazingblaze8.moregems.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,7 +14,7 @@ public class MoreGems implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-
+		ModBlocks.registerModBlocks();
 
 	}
 }
