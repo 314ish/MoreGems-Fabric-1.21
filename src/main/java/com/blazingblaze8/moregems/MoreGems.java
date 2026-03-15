@@ -1,5 +1,6 @@
 package com.blazingblaze8.moregems;
 
+import com.blazingblaze8.moregems.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,7 @@ public class MoreGems implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 
 
 	}
