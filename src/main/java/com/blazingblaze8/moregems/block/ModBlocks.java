@@ -4,17 +4,23 @@ import com.blazingblaze8.moregems.MoreGems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.ExperienceDroppingBlock;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
 
     public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
-            new Block(AbstractBlock.Settings.create().strength(3.0f).requiresTool()));
+            new ExperienceDroppingBlock(UniformIntProvider.create(4, 8),
+                    AbstractBlock.Settings.create().strength(3.0f).requiresTool()));
+
+    public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
+            new Block(AbstractBlock.Settings.create().strength(5.0f, 6.0f).requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -31,6 +37,9 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(SAPPHIRE_ORE);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(SAPPHIRE_BLOCK);
         });
     }
 }
