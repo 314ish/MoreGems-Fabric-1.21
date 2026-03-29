@@ -2,6 +2,7 @@ package com.blazingblaze8.moregems;
 
 import com.blazingblaze8.moregems.block.ModBlocks;
 import com.blazingblaze8.moregems.item.ModItems;
+import com.blazingblaze8.moregems.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -15,6 +16,6 @@ public class MoreGems implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-
+		ModSounds.registerSounds();
 	}
 }

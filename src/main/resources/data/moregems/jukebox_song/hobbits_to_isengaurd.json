@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.moregems.hobbits_to_isengaurd_music_disc.desc"
+  },
+  "length_in_seconds": 129,
+  "sound_event": "moregems:hobbits_to_isengaurd"
+}

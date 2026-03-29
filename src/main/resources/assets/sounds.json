@@ -1,0 +1,10 @@
+{
+  "hobbits_to_isengaurd": {
+    "sounds": [
+      {
+        "name": "moregems:hobbits_to_isengaurd",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -2,5 +2,8 @@
   "item.moregems.sapphire": "Sapphire",
 
   "block.moregems.sapphire_ore": "Sapphire Ore",
-  "block.moregems.sapphire_block": "Sapphire Block"
+  "block.moregems.sapphire_block": "Sapphire Block",
+
+  "item.moregems.hobbits_to_isengaurd_music_disc": "Taking The Hobbits To Isengaurd Music Disc",
+  "item.moregems.hobbits_to_isengaurd_music_disc.desc": "Erwin Beekveld - Taking The Hobbits To Isengaurd"
 }
